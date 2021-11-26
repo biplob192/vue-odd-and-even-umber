@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ODD and EVEN</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="vue.global.js"></script>
+</head>
+<body>
+	<header> VUE.JS - ODD AND EVEN NUMBER COUNT </header>
+	<div id="app">
+		<center>
+		<h2>Odd Count: {{count}}</h2>
+		<button v-on:click="increase">Increment Odd</button>
+		<button @click="decrease">Decrement Odd</button>
+		<button @click="reset">Reset Odd</button>
+		<hr>
+		<h2>Even Count: {{count2}}</h2>
+		<button v-on:click="increase2">Increment Even</button>
+		<button @click="decrease2">Decrement Even</button>
+		<button @click="reset2">Reset Even</button>
+		</center>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>
